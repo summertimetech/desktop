@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Sovereignty — Discover & Explore</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #0e1116;
+      color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2b2f3a, #0f1116);
+      width: 100%;
+      padding: 3.5rem 1rem 4rem;
+      text-align: center;
+    }
+
+    .header-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-logos a {
+      display: inline-block;
+      transition: transform 0.3s, filter 0.3s;
+      position: relative;
+    }
+
+    .header-logos a:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px #78d97e);
+    }
+
+    .logo {
+      width: 70px;
+      opacity: 0.9;
+      transition: opacity 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo:hover {
+      opacity: 1;
+    }
+
+    /* Subtle glimmer header text */
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+      background: linear-gradient(90deg, #ffd966, #78d97e, #ffd966);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glimmer 6s linear infinite;
+    }
+
+    @keyframes glimmer {
+      0% { background-position: 200% 0; }
+      50% { background-position: 0% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    p.lead {
+      font-size: 1.2rem;
+      color: #78d97e;
+      font-weight: 600;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 900px;
+      padding: 3rem 1rem;
+    }
+
+    h2 {
+      color: #78d97e;
+    }
+
+    .solution {
+      background: #1c1f26;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      margin-top: 2rem;
+    }
+
+    /* Soft glow animation behind Linux Mint logo */
+    .solution a img {
+      width: 100px;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+      transition: transform 0.3s, filter 0.3s, opacity 0.3s;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .solution a {
+      display: inline-block;
+      position: relative;
+    }
+
+    .solution a::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 120%;
+      border-radius: 50%;
+      background: rgba(120, 217, 126, 0.25);
+      filter: blur(12px);
+      opacity: 0.6;
+      z-index: 0;
+      animation: softGlow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes softGlow {
+      0% { opacity: 0.4; transform: translate(-50%, -50%) scale(1); }
+      100% { opacity: 0.7; transform: translate(-50%, -50%) scale(1.1); }
+    }
+
+    .solution a img:hover {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 12px #78d97e);
+      opacity: 1;
+    }
+
+    .button {
+      display: inline-block;
+      background: #78d97e;
+      color: #0f1116;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 1rem;
+    }
+
+    .button:hover {
+      background: #a3e9a8;
+      transform: scale(1.05);
+    }
+
+    ul.downloads {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 1.5rem;
+    }
+
+    ul.downloads li {
+      margin: 0.5rem 0;
+    }
+
+    ul.downloads a {
+      color: #78d97e;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    ul.downloads a:hover {
+      color: #a3e9a8;
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 2rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-logos">
+      <a href="https://www.microsoft.com/windows/windows-11" target="_blank">
+        <img src="documents/Windows_logo_and_wordmark_-_2021.svg.png" alt="Windows 11 Logo" class="logo" />
+      </a>
+      <a href="https://linuxmint.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" alt="Linux Mint Logo" class="logo" />
+      </a>
+    </div>
+    <h1>Windows 11</h1>
+    <p class="lead">Discover How Your Computer Talks to the Cloud</p>
+  </header>
+
+  <section>
+    <h2>Understanding Privacy in Modern Systems</h2>
+    <p>
+      Today’s operating systems connect deeply with online services — syncing data, preferences, and even activities.  
+      But how much of that should be under your control?  
+      This page helps you understand what’s shared and how to take back your privacy without sacrificing ease of use.
+    </p>
+
+     <h1>Linux Mint</h1>
+     <p class="lead">Meet Digital Sovereignty Simple, Fast, and Private</p>
+
+    <section>
+    <h2>Resources & Downloads</h2>
+    <p>Explore our collection of guides and reports on privacy and open-source computing:</p>
+    <ul class="downloads">
+      <li><a href="documents/1. Windows11 Privacy.pdf" download>Windows 11 Privacy Report (PDF)</a></li>
+      <li><a href="documents/2. Windows11 Telemetry Whitepaper.pdf" download>Windows 11 Telemetry Whitepaper (PDF)</a></li>
+      <li><a href="documents/3. Comparison W11 vs Linux Mint.pdf" download>Discover Architecture & Philosophy (PDF)</a></li>
+      <li><a href="documents/3. Comparison W11 vs Linux Mint.pdf" download>Human psychology and ecosystem (PDF)</a></li>
+      <li><a href="documents/4. Contemplations.pdf" download>Contemplations (PDF)</a></li>
+      <li><a href="documents/5. Motivational.pdf" download>Why Should I Change (PDF)</a></li>
+      <li><a href="documents/6. Migration.pdf" download>Linux Mint Migration Guide (PDF)</a></li>
+    </ul>
+  </section>
+
+    <div class="solution">
+      <h2>Choose a Privacy-Respecting Alternative</h2>
+      <a href="https://linuxmint.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" alt="Linux Mint Logo" />
+      </a>
+      <p>
+        Linux Mint is a friendly, open-source operating system designed with simplicity and privacy in mind.  
+        It’s free, community-driven, and gives you the freedom to decide what your computer shares — and what it doesn’t.
+      </p>
+      <a href="https://linuxmint.com" class="button" target="_blank">Learn More & Download</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made for curious, privacy-conscious users everywhere 🌿</p>
+  </footer>
+</body>
+</html>
